@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"5412d3eded076306","type":"text","text":"#### Nodo de red\nResponsabilidad: acceso externo y seguridad\nFunciones:\n- VPN propia\n- Reverse proxy\n- Control de tráfico y reglas de acceso\n\nInterfaz: APIs internas, puertos de entrada/salida","x":-1640,"y":-400,"width":400,"height":280},
+		{"id":"7a086071f52f7d57","type":"text","text":"#### NAS\nResponsabilidad: almacenamiento persistente\nFunciones:\n- RAIDZ2 / Backups\n- Logs y snapshots\n- Compartición de archivos\n\nInterfaz: NFS / SMB / APIs internas","x":-1640,"y":-90,"width":380,"height":260},
+		{"id":"7f92c5227ac47a25","type":"text","text":"#### Servidor principal (AMARS)\nResponsabilidad: ejecución de servicios\nFunciones:\n- Lanzar servidores de juegos\n- Ejecutar scripts y procesos Python\n- Gestión de rutas y binarios\n\nInterfaz: systemd, API interna ","x":-1200,"y":-400,"width":340,"height":273},
+		{"id":"68b513c5ae94fb44","type":"text","text":"#### Nodo IA (Agentes)\nResponsabilidad: inteligencia y automatización\nFunciones:\n- Asistente personal\n- ORPHEUS + otros agentes\n- Aprendizaje y recomendaciones\n\nInterfaces: API de eventos, integracion con APOLLO","x":-1200,"y":-90,"width":440,"height":260}
+	],
+	"edges":[]
+}
