@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Tabla
+    filters:
+      and:
+        - file.hasProperty("Status")
+    order:
+      - file.folder
+      - Status

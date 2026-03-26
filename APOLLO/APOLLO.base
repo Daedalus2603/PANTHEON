@@ -1,0 +1,12 @@
+formulas:
+  Sin título: ""
+views:
+  - type: table
+    name: Tabla
+    filters:
+      and:
+        - Base == link("APOLLO.base")
+    order:
+      - file.basename
+      - Base
+      - Type

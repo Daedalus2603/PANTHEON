@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Tabla
+    filters:
+      and:
+        - Type == "TODOS"
+    order:
+      - file.folder
+      - file.name
