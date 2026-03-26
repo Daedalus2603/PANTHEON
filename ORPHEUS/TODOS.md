@@ -1,4 +1,4 @@
 ---
-Base: "[[ORPHEUS.base|ORPHEUS]]"
+Proyect: "[[ORPHEUS]]"
 Type: TODOS
 ---

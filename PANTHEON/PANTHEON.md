@@ -1,9 +1,9 @@
 Lista de proyectos:
 
-- [[AMARS.base|AMARS]]
-- [[APOLLO.base|APOLLO]]
-- [[ORPHEUS.base|ORPHEUS]]
-- [[HELIOS.base|HELIOS]]
+- [[A.M.A.R.S.]]
+- [[APOLLO]]
+- [[ORPHEUS]]
+- [[HELIOS]]
 
 Tareas Globales: [[GlobalTask.base|TODOS]]
 Estado de los proyectos: [[Dashboard.base|Status]]

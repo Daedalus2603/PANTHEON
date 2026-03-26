@@ -1,4 +1,4 @@
 ---
-Base: "[[HELIOS.base|HELIOS]]"
+Proyect: "[[HELIOS]]"
 Type: Architecture
 ---

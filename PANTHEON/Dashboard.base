@@ -5,5 +5,5 @@ views:
       and:
         - file.hasProperty("Status")
     order:
-      - file.folder
+      - file.name
       - Status

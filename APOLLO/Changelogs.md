@@ -1,4 +1,4 @@
 ---
-Base: "[[APOLLO.base|APOLLO]]"
+Proyect: "[[APOLLO]]"
 Type: Changelogs
 ---
