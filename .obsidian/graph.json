@@ -6,17 +6,53 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": false,
+  "colorGroups": [
+    {
+      "query": "path:AMARS  ",
+      "color": {
+        "a": 1,
+        "rgb": 12270058
+      }
+    },
+    {
+      "query": "path:ORPHEUS  ",
+      "color": {
+        "a": 1,
+        "rgb": 3323169
+      }
+    },
+    {
+      "query": "path:PANTHEON  ",
+      "color": {
+        "a": 1,
+        "rgb": 13803023
+      }
+    },
+    {
+      "query": "path:APOLLO  ",
+      "color": {
+        "a": 1,
+        "rgb": 14302987
+      }
+    },
+    {
+      "query": "path:HELIOS  ",
+      "color": {
+        "a": 1,
+        "rgb": 31743
+      }
+    }
+  ],
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 0.993229166666667,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6316046762907476,
+  "scale": 0.8854989543150376,
   "close": true
 }

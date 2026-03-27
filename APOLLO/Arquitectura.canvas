@@ -1,9 +1,25 @@
 {
 	"nodes":[
-		{"id":"5412d3eded076306","type":"text","text":"#### Nodo de red\nResponsabilidad: acceso externo y seguridad\nFunciones:\n- VPN propia\n- Reverse proxy\n- Control de tráfico y reglas de acceso\n\nInterfaz: APIs internas, puertos de entrada/salida","x":-1640,"y":-400,"width":400,"height":280},
-		{"id":"7a086071f52f7d57","type":"text","text":"#### NAS\nResponsabilidad: almacenamiento persistente\nFunciones:\n- RAIDZ2 / Backups\n- Logs y snapshots\n- Compartición de archivos\n\nInterfaz: NFS / SMB / APIs internas","x":-1640,"y":-90,"width":380,"height":260},
-		{"id":"7f92c5227ac47a25","type":"text","text":"#### Servidor principal (AMARS)\nResponsabilidad: ejecución de servicios\nFunciones:\n- Lanzar servidores de juegos\n- Ejecutar scripts y procesos Python\n- Gestión de rutas y binarios\n\nInterfaz: systemd, API interna ","x":-1200,"y":-400,"width":340,"height":273},
-		{"id":"68b513c5ae94fb44","type":"text","text":"#### Nodo IA (Agentes)\nResponsabilidad: inteligencia y automatización\nFunciones:\n- Asistente personal\n- ORPHEUS + otros agentes\n- Aprendizaje y recomendaciones\n\nInterfaces: API de eventos, integracion con APOLLO","x":-1200,"y":-90,"width":440,"height":260}
+		{"id":"d3f81dedb457d3e8","type":"group","x":-1000,"y":-880,"width":1000,"height":1300,"label":"Estructura General v1"},
+		{"id":"40e0862ff99ed375","type":"group","x":-1980,"y":-580,"width":860,"height":617,"label":"Composicion General v1"},
+		{"id":"5412d3eded076306","type":"text","text":"#### Nodo de red\nResponsabilidad: acceso externo y seguridad\nFunciones:\n- VPN propia\n- Reverse proxy\n- Control de tráfico y reglas de acceso\n\nInterfaz: APIs internas, puertos de entrada/salida","x":-1960,"y":-560,"width":400,"height":280},
+		{"id":"68b513c5ae94fb44","type":"text","text":"#### Nodo IA (Agentes)\nResponsabilidad: inteligencia y automatización\nFunciones:\n- Asistente personal\n- ORPHEUS + otros agentes\n- Aprendizaje y recomendaciones\n\nInterfaces: API de eventos, integracion con APOLLO","x":-1960,"y":-240,"width":420,"height":260},
+		{"id":"7a086071f52f7d57","type":"text","text":"#### NAS\nResponsabilidad: almacenamiento persistente\nFunciones:\n- RAIDZ2 / Backups\n- Logs y snapshots\n- Compartición de archivos\n\nInterfaz: NFS / SMB / APIs internas","x":-1520,"y":-240,"width":380,"height":260},
+		{"id":"0c3f20f644dce65b","type":"text","text":"# RED INTERNA\n---\nSwitch + VLANS ","x":-698,"y":-180,"width":357,"height":160},
+		{"id":"ec125d60ccf59b1b","type":"text","text":"# SERVIDOR PRINCIPAL\n###### (Ryzen 7 5800x)\n---\n- Debian sin GUI\n- AMARS\n\t- Servidores de juegos\n\t- systemd services","x":-684,"y":68,"width":328,"height":280},
+		{"id":"ed2a03e7a60eea03","type":"text","text":"# NODO DE RED \n###### Debian + Docker\n---\n- VPN propia (wireGuard)\n- Reverse Proxy (Nginx/Caddy)\n- Certificados HTPPS\n- Control de acceso externo\n- APIs públicas del homelab","x":-657,"y":-567,"width":275,"height":334},
+		{"id":"09b6e358ea898709","type":"text","text":"# ROUTER ISP\n(Norma, NAT)","x":-622,"y":-716,"width":205,"height":88},
+		{"id":"bb081bee24bcd39e","type":"text","text":"   # Internet","x":-600,"y":-840,"width":160,"height":80},
+		{"id":"3a42cb91f4d9f0e6","type":"text","text":"# NAS\n###### RAIDZ2 (4 disk)\n---\n- Almacenamientos\n- Backups\n- Datos persistentes\n- Snapshots","x":-960,"y":37,"width":210,"height":343},
+		{"id":"66409dba3c20860c","type":"text","text":"# NODO IA\n---\n- Asistente local\n- Automatizaciones\n- Agentes inteligentes\n- Integración con servicios","x":-320,"y":37,"width":281,"height":253},
+		{"id":"7f92c5227ac47a25","type":"text","text":"#### Servidor principal (AMARS)\nResponsabilidad: ejecución de servicios\nFunciones:\n- Lanzar servidores de juegos\n- Ejecutar scripts y procesos Python\n- Gestión de rutas y binarios\n\nInterfaz: systemd, API interna ","x":-1520,"y":-553,"width":340,"height":273}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"7c28e3152c820f93","fromNode":"bb081bee24bcd39e","fromSide":"bottom","toNode":"09b6e358ea898709","toSide":"top"},
+		{"id":"cc29e16657e49149","fromNode":"09b6e358ea898709","fromSide":"bottom","toNode":"ed2a03e7a60eea03","toSide":"top"},
+		{"id":"a078bff011f0f566","fromNode":"ed2a03e7a60eea03","fromSide":"bottom","toNode":"0c3f20f644dce65b","toSide":"top"},
+		{"id":"f73e2df7588f2533","fromNode":"0c3f20f644dce65b","fromSide":"bottom","toNode":"ec125d60ccf59b1b","toSide":"top"},
+		{"id":"478c879febeb6ad6","fromNode":"0c3f20f644dce65b","fromSide":"bottom","toNode":"3a42cb91f4d9f0e6","toSide":"top"},
+		{"id":"cf4d2bb5f1163ffa","fromNode":"0c3f20f644dce65b","fromSide":"bottom","toNode":"66409dba3c20860c","toSide":"top"}
+	]
 }

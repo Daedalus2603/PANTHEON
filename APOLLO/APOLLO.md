@@ -19,7 +19,7 @@ APOLLO es la plataforma central que organiza, conecta y coordina todos los siste
 - [[A.M.A.R.S.|AMARS]], [[ORPHEUS]] y futuros proyectos operan dentro de APOLLO  
 - Permite que cada sistema mantenga independencia, pero con sentido y coherencia  
 - Sirve como base para la futura integración de [[HELIOS]]  
-  
+
 ### Principios  
 - **Modularidad** → cada sistema tiene responsabilidad clara  
 - **Separación** → acoplamientos mínimos  
