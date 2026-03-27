@@ -1,4 +1,4 @@
 ---
 Proyect: "[[APOLLO]]"
-Type: TODOS
+Type: Task
 ---

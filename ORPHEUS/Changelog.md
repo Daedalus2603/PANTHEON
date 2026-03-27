@@ -1,4 +1,4 @@
 ---
 Proyect: "[[ORPHEUS]]"
-Type: Changelogs
+Type: Changelog
 ---

@@ -1,4 +1,4 @@
 ---
 Proyect: "[[HELIOS]]"
-Type: Changelogs
+Type: Changelog
 ---

@@ -1,4 +1,4 @@
 ---
 Proyect: "[[ORPHEUS]]"
-Type: TODOS
+Type: Task
 ---

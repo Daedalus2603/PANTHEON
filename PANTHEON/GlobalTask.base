@@ -3,7 +3,7 @@ views:
     name: Tabla
     filters:
       and:
-        - Type == "TODOS"
+        - Type == "Task"
     order:
       - file.folder
       - file.name

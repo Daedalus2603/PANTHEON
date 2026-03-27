@@ -1,4 +1,4 @@
 ---
 Proyect: "[[A.M.A.R.S.]]"
-Type: Task
+Type: Changelog
 ---
